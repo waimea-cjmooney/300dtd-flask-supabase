@@ -1,0 +1,32 @@
+{% extends 'pages/base.jinja' %}
+
+{% block title %} Hello World! {% endblock %}
+
+{% block content %} 
+    <section id="hero">
+        <h1>Hello!! X3</h1> 
+    </section>
+
+    <section id="things">
+        {% for thing in things %}
+
+            <article>
+                <header>
+                    {{ thing["name"] }}
+                </header>
+
+                {{ thing["description"] }}
+                <br>
+
+                Cost: ${{ thing["cost"] }} 
+                
+
+                <footer>
+                    Delete
+                </footer>
+
+            </article>
+
+        {% endfor %}
+    </section>
+{% endblock %}
