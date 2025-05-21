@@ -15,14 +15,16 @@
                     {{ thing["name"] }}
                 </header>
 
-                {{ thing["description"] }}
-                <br>
+                <p>
+                    {{ thing["description"] }}
+                    <br>
 
-                Cost: ${{ thing["cost"] }} 
-                
+                    Cost: ${{ thing["cost"] }} 
+                </p>
 
                 <footer>
-                    Delete
+                    <a href="/thing/{{ thing['id'] }}">More...</a>
+                    <a href="/delete/{{ thing['id'] }}">Delete</a>
                 </footer>
 
             </article>

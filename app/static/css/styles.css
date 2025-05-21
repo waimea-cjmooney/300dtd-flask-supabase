@@ -16,3 +16,12 @@
 #things article {
     width: 15rem;
 }
+
+#things article p {
+    min-height: 6.5rem;
+}
+
+#things article footer {
+    display: flex;
+    justify-content: space-between;
+}
